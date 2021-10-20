@@ -1,5 +1,5 @@
 {% set name = "bioimageio.spec" %}
-{% set version = "0.3.3.post4" %}
+{% set version = "0.3.3.post5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bioimageio.spec-{{ version }}.tar.gz
-  sha256: 4677cb784837e03534020fbfd36e690cebe4790c6ae4335ac37e71c46cdeec06
+  sha256: 10bd67bf5fd25fd1218dab75b324091a23c1ec6727208c7cd75a3dacbfda500f
 
 build:
   number: 0
