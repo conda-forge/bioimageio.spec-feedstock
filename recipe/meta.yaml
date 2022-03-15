@@ -1,5 +1,5 @@
 {% set name = "bioimageio.spec" %}
-{% set version = "0.4.5.post2" %}
+{% set version = "0.4.5.post3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bioimageio.spec-{{ version }}.tar.gz
-  sha256: 2929302f836c68374051612a978b03407714b40056419b2738e5543dc160a511
+  sha256: a4a29109a49203cdb94a53f0b6f731e9eb7a2e9d7d905cdf7ae24d4b12e5a717
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - marshmallow >=3.6.0,<4.0
     - marshmallow-jsonschema
     - marshmallow-union
+    - packaging >=17.0
     - python >=3.7
     - python-stdnum
     - pyyaml >=5.2
