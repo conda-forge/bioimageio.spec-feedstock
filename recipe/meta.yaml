@@ -18,19 +18,19 @@ build:
 requirements:
   host:
     - pip
-    - python>=3.8
+    - python >=3.8
   run:
-    - annotated-types>=0.5.0
+    - annotated-types >=0.5.0
     - email_validator
     - imageio
     - loguru
-    - numpy>=1.21
-    - packaging>=17.0
+    - numpy >=1.21
+    - packaging >=17.0
     - pooch
     - pydantic-settings
-    - pydantic>=2.6.3
+    - pydantic >=2.6.3
     - python-dateutil
-    - python>=3.8
+    - python >=3.8
     - ruyaml
     - tqdm
     - typing-extensions
