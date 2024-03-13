@@ -13,36 +13,35 @@ source:
 build:
   number: 0
   noarch: python
-  entry_points:
-    - bioimageio = bioimageio.spec.__main__:app
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - imageio >=2.5
-    - marshmallow >=3.6.0,<4.0
-    - marshmallow-jsonschema
-    - marshmallow-union
+    - annotated-types >=0.5.0
+    - email_validator
+    - imageio
+    - loguru
+    - numpy >=1.21
     - packaging >=17.0
-    - python >=3.7
-    - python-stdnum
-    - pyyaml >=5.2
-    - requests
-    - ruamel.yaml
+    - pooch
+    - pydantic-core
+    - pydantic-settings
+    - pydantic >=2.6.3
+    - python-dateutil
+    - python >=3.8
+    - ruyaml
     - tqdm
-    - typer
     - typing-extensions
+
 
 test:
   imports:
-    - bioimageio
     - bioimageio.spec
   commands:
     - pip check
-    - bioimageio --help
   requires:
     - pip
 
