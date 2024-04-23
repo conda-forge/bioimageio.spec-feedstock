@@ -30,8 +30,10 @@ requirements:
     - pydantic-core
     - pydantic-settings
     - pydantic >=2.6.3
-    - python-dateutil
     - python >=3.8
+    - python-dateutil
+    - python-dotenv
+    - rich
     - ruyaml
     - tqdm
     - typing-extensions
