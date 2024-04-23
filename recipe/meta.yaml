@@ -1,5 +1,5 @@
 {% set name = "bioimageio.spec" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2.post1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bioimageio.spec-{{ version }}.tar.gz
-  sha256: 258d0dc8cca8819a8cfe7e8d7e4011c255cdc9bf9c750807e5cc694720ae08e7
+  sha256: 5261d6358f9af59b52e140eb506fd3a9fa965155c536da3829e3357ac5c55dc8
 
 build:
   number: 0
@@ -30,8 +30,10 @@ requirements:
     - pydantic-core
     - pydantic-settings
     - pydantic >=2.6.3
-    - python-dateutil
     - python >=3.8
+    - python-dateutil
+    - python-dotenv
+    - rich
     - ruyaml
     - tqdm
     - typing-extensions
