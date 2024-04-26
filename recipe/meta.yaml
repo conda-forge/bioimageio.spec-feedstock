@@ -33,6 +33,7 @@ requirements:
     - python >=3.8
     - python-dateutil
     - python-dotenv
+    - requests
     - rich
     - ruyaml
     - tqdm
