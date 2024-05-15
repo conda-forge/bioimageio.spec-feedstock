@@ -20,16 +20,16 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - annotated-types >=0.5.0
+    - annotated-types >=0.5.0,<1
     - email_validator
     - imageio
     - loguru
     - numpy >=1.21
     - packaging >=17.0
-    - pooch
+    - pooch >=1.5,<2
     - pydantic-core
     - pydantic-settings
-    - pydantic >=2.6.3
+    - pydantic >=2.6.3,<3
     - python >=3.8
     - python-dateutil
     - python-dotenv
