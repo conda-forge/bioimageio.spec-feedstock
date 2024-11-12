@@ -37,6 +37,7 @@ requirements:
     - requests
     - rich
     - ruyaml
+    - tifffile
     - tqdm
     - typing-extensions
 
