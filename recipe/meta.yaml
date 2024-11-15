@@ -23,7 +23,6 @@ requirements:
   run:
     - annotated-types >=0.5.0,<1
     - email_validator
-    - h5py
     - imageio
     - loguru
     - numpy >=1.21
@@ -34,7 +33,6 @@ requirements:
     - pydantic >=2.7.0,<3
     - python >=3.8
     - python-dateutil
-    - python-dotenv
     - requests
     - rich
     - ruyaml
