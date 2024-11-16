@@ -1,6 +1,6 @@
 {% set name = "bioimageio.spec" %}
 {% set version = "0.5.3.3" %}
-
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python 3.8
+    - python {{ python_min }}
     - setuptools
   run:
     - annotated-types >=0.5.0,<1
@@ -31,7 +31,7 @@ requirements:
     - pydantic-core
     - pydantic-settings
     - pydantic >=2.7.0,<3
-    - python >=3.8
+    - python >={{ python_min }}
     - python-dateutil
     - requests
     - rich
@@ -48,7 +48,7 @@ test:
     - pip check
   requires:
     - pip
-    - python 3.8
+    - python {{ python_min }}
 
 about:
   home: https://github.com/bioimage-io/spec-bioimage-io
