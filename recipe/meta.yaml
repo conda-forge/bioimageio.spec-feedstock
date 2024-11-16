@@ -48,6 +48,7 @@ test:
     - pip check
   requires:
     - pip
+    - python 3.8
 
 about:
   home: https://github.com/bioimage-io/spec-bioimage-io
