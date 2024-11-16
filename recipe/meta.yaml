@@ -1,13 +1,13 @@
 {% set name = "bioimageio.spec" %}
 {% set version = "0.5.3.4" %}
-
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bioimageio.spec-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bioimageio.spec-{{ version }}.tar.gz
   sha256: e00d2b30e388d16092ff0adb3c68dff7022cbd48760f80b4c29958a9621ea2f2
 
 build:
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
     - annotated-types >=0.5.0,<1
@@ -31,7 +31,7 @@ requirements:
     - pydantic-core
     - pydantic-settings
     - pydantic >=2.7.0,<3
-    - python >=3.8
+    - python >={{ python_min }}
     - python-dateutil
     - requests
     - rich
@@ -39,6 +39,7 @@ requirements:
     - tifffile
     - tqdm
     - typing-extensions
+    - zipp
 
 
 test:
@@ -48,6 +49,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/bioimage-io/spec-bioimage-io
