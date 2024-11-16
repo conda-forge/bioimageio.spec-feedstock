@@ -39,6 +39,7 @@ requirements:
     - tifffile
     - tqdm
     - typing-extensions
+    - zipp
 
 
 test:
