@@ -23,6 +23,7 @@ requirements:
   run:
     - annotated-types >=0.5.0,<1
     - email_validator
+    - genericache ==0.4.1
     - imageio
     - loguru
     - markdown
@@ -30,14 +31,14 @@ requirements:
     - packaging >=17.0
     - pooch >=1.5,<2
     - pydantic-core
-    - pydantic-settings
-    - pydantic >=2.7.0,<2.10
+    - pydantic-settings >=2.5,<3
+    - pydantic >=2.10.3,<2.12
     - python >={{ python_min }}
     - python-dateutil
-    - requests
+    - httpx
     - rich
     - ruyaml
-    - tifffile
+    - tifffile >=2020.7.4
     - tqdm
     - typing-extensions
     - zipp
@@ -48,9 +49,17 @@ test:
     - bioimageio.spec
   commands:
     - pip check
+    - pytest
   requires:
     - pip
     - python {{ python_min }}
+    - black
+    - deepdiff
+    - jsonschema
+    - lxml
+    - pytest
+    - python-dotenv
+    - respx
 
 about:
   home: https://github.com/bioimage-io/spec-bioimage-io
