@@ -45,11 +45,14 @@ requirements:
 
 
 test:
+  source_files:
+    - bioimageio
+    - tests
   imports:
     - bioimageio.spec
   commands:
     - pip check
-    - pytest --pyargs bioimageio.spec
+    - pytest --import-mode=importlib tests
   requires:
     - pip
     - python {{ python_min }}
