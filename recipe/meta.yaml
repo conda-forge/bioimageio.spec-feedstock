@@ -45,6 +45,9 @@ requirements:
 
 
 test:
+  source_files:
+    - bioimageio
+    - tests
   imports:
     - bioimageio.spec
   commands:
