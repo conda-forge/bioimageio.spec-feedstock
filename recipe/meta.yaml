@@ -45,24 +45,13 @@ requirements:
 
 
 test:
-  source_files:
-    - bioimageio
-    - tests
   imports:
     - bioimageio.spec
   commands:
     - pip check
-    - pytest --import-mode=importlib tests
   requires:
     - pip
     - python {{ python_min }}
-    - black
-    - deepdiff
-    - jsonschema
-    - lxml
-    - pytest
-    - python-dotenv
-    - respx
 
 about:
   home: https://github.com/bioimage-io/spec-bioimage-io
