@@ -23,7 +23,7 @@ requirements:
   run:
     - annotated-types >=0.5.0,<1
     - email_validator
-    - genericache ==0.4.1
+    - genericache ==0.5.2
     - imageio
     - loguru
     - markdown
@@ -41,6 +41,7 @@ requirements:
     - tifffile >=2020.7.4
     - tqdm
     - typing-extensions
+    - exceptiongroup
     - zipp
 
 
