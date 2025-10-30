@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@k-dominik](https://github.com/k-dominik/)
 * [@oeway](https://github.com/oeway/)
 
-
-<!-- dummy commit to enable rerendering -->
-
